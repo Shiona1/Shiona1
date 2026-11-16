@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img" aria-label="Подвал">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#221f2e"/><stop offset="55%" stop-color="#251f30"/><stop offset="100%" stop-color="#1f2333"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5d5885" stop-opacity="0.9"/><stop offset="100%" stop-color="#5d5885" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-45%" y="-45%" width="190%" height="190%"><feGaussianBlur stdDeviation="46"/></filter>
+    <clipPath id="round"><rect x="40" y="28" width="920" height="94" rx="26"/></clipPath>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#221f2e" stop-opacity="0.95"/>
+      <stop offset="46%" stop-color="#251f30" stop-opacity="0.86"/>
+      <stop offset="72%" stop-color="#1f2333" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1f2333" stop-opacity="0.05"/>
+    </linearGradient>
+    <style>
+  @keyframes drift1 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(26px,-18px) scale(1.08)} }
+  @keyframes drift2 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(-22px,16px) scale(1.06)} }
+  @keyframes drift3 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(18px,20px) scale(1.1)} }
+  @keyframes drift4 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(-16px,-22px) scale(1.05)} }
+  @keyframes rise { from {opacity:.35; transform:translateY(10px)} to {opacity:1; transform:translateY(0)} }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+  @keyframes sheen { 0%{transform:translateX(-120%)} 60%,100%{transform:translateX(220%)} }
+  @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+  .d1{animation:drift1 26s ease-in-out infinite alternate}
+  .d2{animation:drift2 32s ease-in-out infinite alternate}
+  .d3{animation:drift3 29s ease-in-out infinite alternate}
+  .d4{animation:drift4 35s ease-in-out infinite alternate}
+  .r{animation:rise .9s cubic-bezier(.2,.7,.2,1)}
+  .r1{animation-delay:.05s}.r2{animation-delay:.18s}.r3{animation-delay:.3s}.r4{animation-delay:.42s}
+  .dot{animation:pulse 2.6s ease-in-out infinite}
+  .float{animation:floaty 7s ease-in-out infinite}
+  .sheen{animation:sheen 9s ease-in-out infinite}
+  text{font-family:'Segoe UI',Inter,-apple-system,system-ui,sans-serif}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important} }
+</style>
+  </defs>
+  
+  <rect width="1000" height="150" fill="url(#bg)"/>
+  
+  <g filter="url(#soft)" opacity="0.78">
+    <circle class="d1" cx="120" cy="70" r="118" fill="#8a5f78"/>
+    <circle class="d2" cx="360" cy="380" r="138" fill="#3f6b63"/>
+    <circle class="d3" cx="640" cy="120" r="108" fill="#7d6352"/>
+    <circle class="d4" cx="950" cy="330" r="128" fill="#5d5885"/>
+  </g>
+  <path d="M0,96 C180,64 340,124 520,104 C700,84 850,120 1000,92 L1000,150 L0,150 Z" fill="#2e293c" opacity="0.55"/>
+  <g class="float">
+    <circle cx="500" cy="70" r="34" fill="#8a5f78" opacity="0.35"/>
+    <circle cx="500" cy="70" r="22" fill="#5d5885" opacity="0.45"/>
+  </g>
+  <text x="72" y="70" font-size="13" letter-spacing="2" fill="#8e839c">PASTEL &#183; SVG &#183; NO EXTERNAL WIDGETS</text>
+  <text x="928" y="70" font-size="13" fill="#8e839c" text-anchor="end">Shiona1 &#183; 2026</text>
+  
+</svg>

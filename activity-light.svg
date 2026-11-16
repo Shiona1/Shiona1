@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-label="Активность: языки, проекты, дни недели">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf3f7"/><stop offset="55%" stop-color="#eef1fb"/><stop offset="100%" stop-color="#f6effb"/>
+    </linearGradient>
+    <filter id="soft" x="-45%" y="-45%" width="190%" height="190%"><feGaussianBlur stdDeviation="44"/></filter>
+    <style>
+  @keyframes draw { from { stroke-dasharray: 0 var(--c); } }
+  @keyframes fadeIn { from { opacity: .25; } }
+  @keyframes pulseSoft { 0%,100%{opacity:.55} 50%{opacity:.95} }
+  .seg { animation: draw 1.15s cubic-bezier(.25,.8,.3,1); }
+  .lg { animation: fadeIn .8s ease-out; }
+  .core { animation: pulseSoft 6s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important} }
+  text{font-family:'Segoe UI',Inter,-apple-system,system-ui,sans-serif}
+
+      .blob1{animation:driftA 24s ease-in-out infinite alternate}
+      .blob2{animation:driftB 30s ease-in-out infinite alternate}
+      .blob3{animation:driftA 27s ease-in-out infinite alternate-reverse}
+      @keyframes driftA { to { transform: translate(18px,-14px) scale(1.07) } }
+      @keyframes driftB { to { transform: translate(-16px,12px) scale(1.05) } }
+    </style>
+  </defs>
+  
+  <rect width="1000" height="430" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity="0.7">
+    <circle class="blob1" cx="120" cy="90" r="110" fill="#e79ec1"/>
+    <circle class="blob2" cx="520" cy="380" r="120" fill="#b6a3e8"/>
+    <circle class="blob3" cx="880" cy="80" r="105" fill="#96cbb8"/>
+  </g>
+  <text x="72" y="52" font-size="15" letter-spacing="2.6" font-weight="600" fill="#4a4152">/// АКТИВНОСТЬ</text>
+  <text x="928" y="52" font-size="12" fill="#a99fb3" text-anchor="end">13 репозиториев · 420 коммитов · 7.6 МБ кода</text>
+
+  <text x="190" y="100" text-anchor="middle" font-size="12" letter-spacing="2" fill="#a99fb3">ЯЗЫКИ</text>
+  <circle cx="190" cy="168" r="58" fill="none" stroke="#efe6f1" stroke-width="15"/><circle class="seg" style="--c:364.42;animation-delay:0.00s" cx="190" cy="168" r="58" fill="none" stroke="#e79ec1" stroke-width="15" stroke-dasharray="131.87 232.56" stroke-dashoffset="0.00" transform="rotate(-90 190 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.12s" cx="190" cy="168" r="58" fill="none" stroke="#b6a3e8" stroke-width="15" stroke-dasharray="72.00 292.42" stroke-dashoffset="-131.87" transform="rotate(-90 190 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.24s" cx="190" cy="168" r="58" fill="none" stroke="#96cbb8" stroke-width="15" stroke-dasharray="42.99 321.43" stroke-dashoffset="-203.87" transform="rotate(-90 190 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.36s" cx="190" cy="168" r="58" fill="none" stroke="#f0c08a" stroke-width="15" stroke-dasharray="41.09 323.33" stroke-dashoffset="-246.86" transform="rotate(-90 190 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.48s" cx="190" cy="168" r="58" fill="none" stroke="#c9a8d9" stroke-width="15" stroke-dasharray="27.83 336.59" stroke-dashoffset="-287.96" transform="rotate(-90 190 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.60s" cx="190" cy="168" r="58" fill="none" stroke="#9dbbdf" stroke-width="15" stroke-dasharray="17.51 346.91" stroke-dashoffset="-315.79" transform="rotate(-90 190 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.72s" cx="190" cy="168" r="58" fill="none" stroke="#d8c39a" stroke-width="15" stroke-dasharray="17.48 346.95" stroke-dashoffset="-333.30" transform="rotate(-90 190 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.84s" cx="190" cy="168" r="58" fill="none" stroke="#c9c0d6" stroke-width="15" stroke-dasharray="13.65 350.77" stroke-dashoffset="-350.77" transform="rotate(-90 190 168)"/><text x="190" y="166" text-anchor="middle" font-size="22" font-weight="600" fill="#4a4152">7.2 МБ</text><text x="190" y="186" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#a99fb3">КОДА</text>
+  <g class="lg" style="animation-delay:0.30s">
+    <circle cx="95" cy="268.5" r="4.5" fill="#e79ec1"/>
+    <text x="108" y="272" font-size="12.5" fill="#7d7387">Python</text>
+    <text x="286" y="272" font-size="12.5" fill="#a99fb3" text-anchor="end">36%</text>
+  </g><g class="lg" style="animation-delay:0.37s">
+    <circle cx="95" cy="289.5" r="4.5" fill="#b6a3e8"/>
+    <text x="108" y="293" font-size="12.5" fill="#7d7387">TypeScript</text>
+    <text x="286" y="293" font-size="12.5" fill="#a99fb3" text-anchor="end">20%</text>
+  </g><g class="lg" style="animation-delay:0.44s">
+    <circle cx="95" cy="310.5" r="4.5" fill="#96cbb8"/>
+    <text x="108" y="314" font-size="12.5" fill="#7d7387">Прочее</text>
+    <text x="286" y="314" font-size="12.5" fill="#a99fb3" text-anchor="end">12%</text>
+  </g><g class="lg" style="animation-delay:0.51s">
+    <circle cx="95" cy="331.5" r="4.5" fill="#f0c08a"/>
+    <text x="108" y="335" font-size="12.5" fill="#7d7387">JavaScript</text>
+    <text x="286" y="335" font-size="12.5" fill="#a99fb3" text-anchor="end">11%</text>
+  </g>
+
+  <text x="500" y="100" text-anchor="middle" font-size="12" letter-spacing="2" fill="#a99fb3">ПРОЕКТЫ</text>
+  <circle cx="500" cy="168" r="58" fill="none" stroke="#efe6f1" stroke-width="15"/><circle class="seg" style="--c:364.42;animation-delay:0.00s" cx="500" cy="168" r="58" fill="none" stroke="#e79ec1" stroke-width="15" stroke-dasharray="137.96 226.46" stroke-dashoffset="0.00" transform="rotate(-90 500 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.12s" cx="500" cy="168" r="58" fill="none" stroke="#b6a3e8" stroke-width="15" stroke-dasharray="77.22 287.20" stroke-dashoffset="-137.96" transform="rotate(-90 500 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.24s" cx="500" cy="168" r="58" fill="none" stroke="#96cbb8" stroke-width="15" stroke-dasharray="72.88 291.54" stroke-dashoffset="-215.18" transform="rotate(-90 500 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.36s" cx="500" cy="168" r="58" fill="none" stroke="#f0c08a" stroke-width="15" stroke-dasharray="30.37 334.06" stroke-dashoffset="-288.07" transform="rotate(-90 500 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.48s" cx="500" cy="168" r="58" fill="none" stroke="#c9a8d9" stroke-width="15" stroke-dasharray="14.75 349.67" stroke-dashoffset="-318.44" transform="rotate(-90 500 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.60s" cx="500" cy="168" r="58" fill="none" stroke="#9dbbdf" stroke-width="15" stroke-dasharray="9.54 354.88" stroke-dashoffset="-333.19" transform="rotate(-90 500 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.72s" cx="500" cy="168" r="58" fill="none" stroke="#d8c39a" stroke-width="15" stroke-dasharray="21.69 342.73" stroke-dashoffset="-342.73" transform="rotate(-90 500 168)"/><text x="500" y="166" text-anchor="middle" font-size="22" font-weight="600" fill="#4a4152">420</text><text x="500" y="186" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#a99fb3">КОММИТОВ</text>
+  <g class="lg" style="animation-delay:0.30s">
+    <circle cx="405" cy="268.5" r="4.5" fill="#e79ec1"/>
+    <text x="418" y="272" font-size="12.5" fill="#7d7387">netviz</text>
+    <text x="596" y="272" font-size="12.5" fill="#a99fb3" text-anchor="end">38%</text>
+  </g><g class="lg" style="animation-delay:0.37s">
+    <circle cx="405" cy="289.5" r="4.5" fill="#b6a3e8"/>
+    <text x="418" y="293" font-size="12.5" fill="#7d7387">MusicNX</text>
+    <text x="596" y="293" font-size="12.5" fill="#a99fb3" text-anchor="end">21%</text>
+  </g><g class="lg" style="animation-delay:0.44s">
+    <circle cx="405" cy="310.5" r="4.5" fill="#96cbb8"/>
+    <text x="418" y="314" font-size="12.5" fill="#7d7387">AI Girlfriend</text>
+    <text x="596" y="314" font-size="12.5" fill="#a99fb3" text-anchor="end">20%</text>
+  </g><g class="lg" style="animation-delay:0.51s">
+    <circle cx="405" cy="331.5" r="4.5" fill="#f0c08a"/>
+    <text x="418" y="335" font-size="12.5" fill="#7d7387">China-site</text>
+    <text x="596" y="335" font-size="12.5" fill="#a99fb3" text-anchor="end">8%</text>
+  </g>
+
+  <text x="810" y="100" text-anchor="middle" font-size="12" letter-spacing="2" fill="#a99fb3">ДНИ НЕДЕЛИ</text>
+  <circle cx="810" cy="168" r="58" fill="none" stroke="#efe6f1" stroke-width="15"/><circle class="seg" style="--c:364.42;animation-delay:0.00s" cx="810" cy="168" r="58" fill="none" stroke="#e79ec1" stroke-width="15" stroke-dasharray="43.38 321.04" stroke-dashoffset="0.00" transform="rotate(-90 810 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.12s" cx="810" cy="168" r="58" fill="none" stroke="#b6a3e8" stroke-width="15" stroke-dasharray="30.37 334.06" stroke-dashoffset="-43.38" transform="rotate(-90 810 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.24s" cx="810" cy="168" r="58" fill="none" stroke="#96cbb8" stroke-width="15" stroke-dasharray="26.03 338.39" stroke-dashoffset="-73.75" transform="rotate(-90 810 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.36s" cx="810" cy="168" r="58" fill="none" stroke="#f0c08a" stroke-width="15" stroke-dasharray="31.24 333.19" stroke-dashoffset="-99.78" transform="rotate(-90 810 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.48s" cx="810" cy="168" r="58" fill="none" stroke="#c9a8d9" stroke-width="15" stroke-dasharray="28.63 335.79" stroke-dashoffset="-131.02" transform="rotate(-90 810 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.60s" cx="810" cy="168" r="58" fill="none" stroke="#9dbbdf" stroke-width="15" stroke-dasharray="132.75 231.67" stroke-dashoffset="-159.65" transform="rotate(-90 810 168)"/><circle class="seg" style="--c:364.42;animation-delay:0.72s" cx="810" cy="168" r="58" fill="none" stroke="#d8c39a" stroke-width="15" stroke-dasharray="72.02 292.41" stroke-dashoffset="-292.41" transform="rotate(-90 810 168)"/><text x="810" y="166" text-anchor="middle" font-size="22" font-weight="600" fill="#4a4152">420</text><text x="810" y="186" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#a99fb3">КОММИТОВ</text>
+  <g class="lg" style="animation-delay:0.30s">
+    <circle cx="715" cy="268.5" r="4.5" fill="#e79ec1"/>
+    <text x="728" y="272" font-size="12.5" fill="#7d7387">Сб</text>
+    <text x="906" y="272" font-size="12.5" fill="#a99fb3" text-anchor="end">36%</text>
+  </g><g class="lg" style="animation-delay:0.37s">
+    <circle cx="715" cy="289.5" r="4.5" fill="#b6a3e8"/>
+    <text x="728" y="293" font-size="12.5" fill="#7d7387">Вс</text>
+    <text x="906" y="293" font-size="12.5" fill="#a99fb3" text-anchor="end">20%</text>
+  </g><g class="lg" style="animation-delay:0.44s">
+    <circle cx="715" cy="310.5" r="4.5" fill="#96cbb8"/>
+    <text x="728" y="314" font-size="12.5" fill="#7d7387">Пн</text>
+    <text x="906" y="314" font-size="12.5" fill="#a99fb3" text-anchor="end">12%</text>
+  </g><g class="lg" style="animation-delay:0.51s">
+    <circle cx="715" cy="331.5" r="4.5" fill="#f0c08a"/>
+    <text x="728" y="335" font-size="12.5" fill="#7d7387">Чт</text>
+    <text x="906" y="335" font-size="12.5" fill="#a99fb3" text-anchor="end">9%</text>
+  </g>
+  
+</svg>

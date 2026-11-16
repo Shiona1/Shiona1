@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="210" viewBox="0 0 1000 210" role="img" aria-label="О себе">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf3f7"/><stop offset="55%" stop-color="#eef1fb"/><stop offset="100%" stop-color="#f6effb"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d9d3f5" stop-opacity="0.9"/><stop offset="100%" stop-color="#d9d3f5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-45%" y="-45%" width="190%" height="190%"><feGaussianBlur stdDeviation="46"/></filter>
+    <clipPath id="round"><rect x="40" y="28" width="920" height="154" rx="26"/></clipPath>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fdf3f7" stop-opacity="0.95"/>
+      <stop offset="46%" stop-color="#eef1fb" stop-opacity="0.86"/>
+      <stop offset="72%" stop-color="#f6effb" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f6effb" stop-opacity="0.05"/>
+    </linearGradient>
+    <style>
+  @keyframes drift1 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(26px,-18px) scale(1.08)} }
+  @keyframes drift2 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(-22px,16px) scale(1.06)} }
+  @keyframes drift3 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(18px,20px) scale(1.1)} }
+  @keyframes drift4 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(-16px,-22px) scale(1.05)} }
+  @keyframes rise { from {opacity:.35; transform:translateY(10px)} to {opacity:1; transform:translateY(0)} }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+  @keyframes sheen { 0%{transform:translateX(-120%)} 60%,100%{transform:translateX(220%)} }
+  @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+  .d1{animation:drift1 26s ease-in-out infinite alternate}
+  .d2{animation:drift2 32s ease-in-out infinite alternate}
+  .d3{animation:drift3 29s ease-in-out infinite alternate}
+  .d4{animation:drift4 35s ease-in-out infinite alternate}
+  .r{animation:rise .9s cubic-bezier(.2,.7,.2,1)}
+  .r1{animation-delay:.05s}.r2{animation-delay:.18s}.r3{animation-delay:.3s}.r4{animation-delay:.42s}
+  .dot{animation:pulse 2.6s ease-in-out infinite}
+  .float{animation:floaty 7s ease-in-out infinite}
+  .sheen{animation:sheen 9s ease-in-out infinite}
+  text{font-family:'Segoe UI',Inter,-apple-system,system-ui,sans-serif}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important} }
+</style>
+  </defs>
+  
+  <rect width="1000" height="210" fill="url(#bg)"/>
+  
+  <g filter="url(#soft)" opacity="0.78">
+    <circle class="d1" cx="120" cy="70" r="118" fill="#f7c9dc"/>
+    <circle class="d2" cx="360" cy="380" r="138" fill="#cfeae0"/>
+    <circle class="d3" cx="640" cy="120" r="108" fill="#fbe0cc"/>
+    <circle class="d4" cx="950" cy="330" r="128" fill="#d9d3f5"/>
+  </g>
+  <g clip-path="url(#round)">
+    <rect x="40" y="28" width="920" height="154" rx="26" fill="#ffffff" opacity="0.62"/>
+    <rect x="40" y="28" width="920" height="154" rx="26" fill="none" stroke="#e9e2f0"/>
+  </g>
+  <g class="r r1"><text x="80" y="84" font-size="42" fill="#d98fb0" opacity="0.55">&#8220;</text></g>
+  <g class="r r2">
+    <text x="112" y="84" font-size="19" fill="#4a4152">Собираю локальные AI-системы, десктопные приложения и железо на ESP32.</text>
+    <text x="112" y="114" font-size="19" fill="#4a4152">Люблю, когда всё работает офлайн, без подписок и без чужих серверов.</text>
+  </g>
+  <g class="r r3">
+    <text x="112" y="158" font-size="15" fill="#a99fb3" font-style="italic">&#12300;&#12393;&#12435;&#12394;&#12395;&#28145;&#12356;&#22812;&#12391;&#12418;&#12289;&#12356;&#12388;&#12363;&#12399;&#24517;&#12378;&#26126;&#12369;&#12427;&#12290;&#12301;</text>
+    <text x="112" y="180" font-size="13" fill="#a99fb3">No matter how deep the night, it always turns to day.</text>
+  </g>
+  
+</svg>

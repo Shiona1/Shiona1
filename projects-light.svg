@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Текущие проекты">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf3f7"/><stop offset="55%" stop-color="#eef1fb"/><stop offset="100%" stop-color="#f6effb"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d9d3f5" stop-opacity="0.9"/><stop offset="100%" stop-color="#d9d3f5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-45%" y="-45%" width="190%" height="190%"><feGaussianBlur stdDeviation="46"/></filter>
+    <clipPath id="round"><rect x="40" y="28" width="920" height="244" rx="26"/></clipPath>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fdf3f7" stop-opacity="0.95"/>
+      <stop offset="46%" stop-color="#eef1fb" stop-opacity="0.86"/>
+      <stop offset="72%" stop-color="#f6effb" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f6effb" stop-opacity="0.05"/>
+    </linearGradient>
+    <style>
+  @keyframes drift1 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(26px,-18px) scale(1.08)} }
+  @keyframes drift2 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(-22px,16px) scale(1.06)} }
+  @keyframes drift3 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(18px,20px) scale(1.1)} }
+  @keyframes drift4 { 0%{transform:translate(0,0) scale(1)} 100%{transform:translate(-16px,-22px) scale(1.05)} }
+  @keyframes rise { from {opacity:.35; transform:translateY(10px)} to {opacity:1; transform:translateY(0)} }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+  @keyframes sheen { 0%{transform:translateX(-120%)} 60%,100%{transform:translateX(220%)} }
+  @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+  .d1{animation:drift1 26s ease-in-out infinite alternate}
+  .d2{animation:drift2 32s ease-in-out infinite alternate}
+  .d3{animation:drift3 29s ease-in-out infinite alternate}
+  .d4{animation:drift4 35s ease-in-out infinite alternate}
+  .r{animation:rise .9s cubic-bezier(.2,.7,.2,1)}
+  .r1{animation-delay:.05s}.r2{animation-delay:.18s}.r3{animation-delay:.3s}.r4{animation-delay:.42s}
+  .dot{animation:pulse 2.6s ease-in-out infinite}
+  .float{animation:floaty 7s ease-in-out infinite}
+  .sheen{animation:sheen 9s ease-in-out infinite}
+  text{font-family:'Segoe UI',Inter,-apple-system,system-ui,sans-serif}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important} }
+</style>
+  </defs>
+  
+  <rect width="1000" height="300" fill="url(#bg)"/>
+  
+  <g filter="url(#soft)" opacity="0.78">
+    <circle class="d1" cx="120" cy="70" r="118" fill="#f7c9dc"/>
+    <circle class="d2" cx="360" cy="380" r="138" fill="#cfeae0"/>
+    <circle class="d3" cx="640" cy="120" r="108" fill="#fbe0cc"/>
+    <circle class="d4" cx="950" cy="330" r="128" fill="#d9d3f5"/>
+  </g>
+  <g class="r r1"><text x="72" y="48" font-size="15" letter-spacing="2.6" font-weight="600" fill="#4a4152">/// ТЕКУЩИЕ ПРОЕКТЫ</text></g>
+  <g class="r r1">
+    <rect x="72" y="76" width="448" height="104" rx="18" fill="#ffffff" stroke="#e9e2f0" opacity="0.94"/>
+    <rect x="72" y="76" width="448" height="104" rx="18" fill="none" stroke="#e9e2f0"/>
+    <clipPath id="cp0"><rect x="72" y="76" width="448" height="104" rx="18"/></clipPath>
+    <g clip-path="url(#cp0)"><rect class="sheen" x="-48" y="76" width="110" height="104" fill="#f7c9dc" opacity="0.18" transform-origin="72px 76px"/></g>
+    <text x="94" y="108" font-size="13" fill="#a99fb3">01</text>
+    <text x="94" y="140" font-size="21" font-weight="600" fill="#4a4152">Kapri</text>
+    <text x="94" y="164" font-size="14" fill="#7d7387">Голосовой компаньон для Windows</text>
+  </g><g class="r r2">
+    <rect x="576" y="76" width="448" height="104" rx="18" fill="#ffffff" stroke="#e9e2f0" opacity="0.94"/>
+    <rect x="576" y="76" width="448" height="104" rx="18" fill="none" stroke="#e9e2f0"/>
+    <clipPath id="cp1"><rect x="576" y="76" width="448" height="104" rx="18"/></clipPath>
+    <g clip-path="url(#cp1)"><rect class="sheen" x="456" y="76" width="110" height="104" fill="#f7c9dc" opacity="0.18" transform-origin="576px 76px"/></g>
+    <text x="598" y="108" font-size="13" fill="#a99fb3">02</text>
+    <text x="598" y="140" font-size="21" font-weight="600" fill="#4a4152">ESL Pricetags</text>
+    <text x="598" y="164" font-size="14" fill="#7d7387">Электронные ценники на e-paper</text>
+  </g><g class="r r3">
+    <rect x="72" y="198" width="448" height="104" rx="18" fill="#ffffff" stroke="#e9e2f0" opacity="0.94"/>
+    <rect x="72" y="198" width="448" height="104" rx="18" fill="none" stroke="#e9e2f0"/>
+    <clipPath id="cp2"><rect x="72" y="198" width="448" height="104" rx="18"/></clipPath>
+    <g clip-path="url(#cp2)"><rect class="sheen" x="-48" y="198" width="110" height="104" fill="#f7c9dc" opacity="0.18" transform-origin="72px 198px"/></g>
+    <text x="94" y="230" font-size="13" fill="#a99fb3">03</text>
+    <text x="94" y="262" font-size="21" font-weight="600" fill="#4a4152">MusicNX</text>
+    <text x="94" y="286" font-size="14" fill="#7d7387">Музыкальный центр на Raspberry Pi</text>
+  </g><g class="r r4">
+    <rect x="576" y="198" width="448" height="104" rx="18" fill="#ffffff" stroke="#e9e2f0" opacity="0.94"/>
+    <rect x="576" y="198" width="448" height="104" rx="18" fill="none" stroke="#e9e2f0"/>
+    <clipPath id="cp3"><rect x="576" y="198" width="448" height="104" rx="18"/></clipPath>
+    <g clip-path="url(#cp3)"><rect class="sheen" x="456" y="198" width="110" height="104" fill="#f7c9dc" opacity="0.18" transform-origin="576px 198px"/></g>
+    <text x="598" y="230" font-size="13" fill="#a99fb3">04</text>
+    <text x="598" y="262" font-size="21" font-weight="600" fill="#4a4152">AI Doctor PC</text>
+    <text x="598" y="286" font-size="14" fill="#7d7387">Диагностика ПК с WinPE-флешки</text>
+  </g>
+  
+</svg>
