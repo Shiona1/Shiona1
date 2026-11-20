@@ -30,9 +30,9 @@
 
 <!-- ПРОЕКТЫ -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="projects-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="projects-light.svg">
-  <img src="projects-light.svg" alt="Текущие проекты" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="projects-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="projects-light.svg?v=2">
+  <img src="projects-light.svg?v=2" alt="Текущие проекты" width="100%">
 </picture>
 
 **Публичные репозитории:** [musicnx](https://github.com/Shiona1/musicnx) — бета музыкального центра · [opencode-go-tray](https://github.com/Shiona1/opencode-go-tray) — лимиты OpenCode Go в трее
@@ -48,3 +48,4 @@
 </picture>
 
 </div>
+
