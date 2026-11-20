@@ -35,6 +35,8 @@
   <img src="projects-light.svg" alt="Текущие проекты" width="100%">
 </picture>
 
+**Публичные репозитории:** [musicnx](https://github.com/Shiona1/musicnx) — бета музыкального центра · [opencode-go-tray](https://github.com/Shiona1/opencode-go-tray) — лимиты OpenCode Go в трее
+
 <!-- ГОСТЕВАЯ КНИГА -->
 <a href="https://github.com/Shiona1"><img src="https://count.getloli.com/@Shiona1?theme=3d-num&padding=6&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" width="150" alt="Счётчик гостей"></a>
 
